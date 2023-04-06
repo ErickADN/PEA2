@@ -9,6 +9,6 @@ import pea2.onpe.model.GrupoVotacion;
 @Repository
 public interface IGrupoVotacion extends JpaRepository<GrupoVotacion, String>{
 	
-	@Query(value="{usp_getGrupoVotacion (id:)}",nativeQuery = true)
+	@Query(value="{call usp_getGrupoVotacion(:id)}",nativeQuery = true)
 	GrupoVotacion getGrupoVotacion(String id);
 }

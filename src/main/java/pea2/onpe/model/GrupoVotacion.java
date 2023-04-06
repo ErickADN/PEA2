@@ -15,7 +15,7 @@ public class GrupoVotacion {
 	private String RazonSocial;
 	private String Direccion;
 	private int idLocalVotacion;
-	private int nCopia;
+	private String nCopia;
 	private int idEstadoActa;
 	private int ElectoresHabiles;
 	private int TotalVotantes;
@@ -66,10 +66,10 @@ public class GrupoVotacion {
 	public void setIdLocalVotacion(int idLocalVotacion) {
 		this.idLocalVotacion = idLocalVotacion;
 	}
-	public int getnCopia() {
+	public String getnCopia() {
 		return nCopia;
 	}
-	public void setnCopia(int nCopia) {
+	public void setnCopia(String nCopia) {
 		this.nCopia = nCopia;
 	}
 	public int getIdEstadoActa() {
